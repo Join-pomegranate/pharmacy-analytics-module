@@ -1,0 +1,24 @@
+@font-face { font-family: 'Season Mix'; src: url('/fonts/SeasonMix-Light.otf') format('opentype'); font-weight: 300; font-display: swap; }
+@font-face { font-family: 'Season Mix'; src: url('/fonts/SeasonMix-Regular.otf') format('opentype'); font-weight: 400; font-display: swap; }
+
+:root {
+  --bg: #F7F2EA; --surface: #FFFFFF; --ink: #24040B; --ink-2: #4A4540; --muted: #6B6762; --faint: #8A847B;
+  --line: #EAE0D1; --line-2: #F1EADF; --field: #E0D6C6; --tint: #FBF8F3; --track: #F3ECE2;
+  --brand: #660C21; --brand-hover: #4E0A19; --brand-wash: #F6E9EC; --brand-wash-2: #FBF3F4;
+}
+html, body { margin: 0; padding: 0; background: var(--bg); }
+* { box-sizing: border-box; }
+body { font-family: 'Google Sans', 'DM Sans', system-ui, -apple-system, 'Helvetica Neue', Arial, sans-serif; color: var(--ink); font-size: 14px; }
+a { color: var(--brand); text-decoration: none; }
+a:hover { color: var(--brand-hover); }
+input, select, textarea, button { font-family: inherit; }
+input:focus, select:focus, textarea:focus { outline: none; }
+button:focus-visible, select:focus-visible, input:focus-visible { outline: 2px solid var(--brand); outline-offset: 2px; }
+select option { color: var(--ink); }
+
+/* hover helpers (the design's style-hover) */
+.h-tint:hover { background: var(--tint) !important; }
+.h-bg:hover { background: var(--bg) !important; }
+.h-white:hover { background: #fff !important; }
+.h-track:hover { background: var(--track) !important; }
+.h-brand:hover { background: var(--brand-hover) !important; }
